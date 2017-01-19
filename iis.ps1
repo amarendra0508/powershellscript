@@ -3,10 +3,8 @@
 #$Policy = "Unrestricted"
 $Policy = "RemoteSigned"
 If ((get-ExecutionPolicy) -ne $Policy) {
-  Write-Host "Script Execution is disabled. Enabling it now"
-  Set-ExecutionPolicy $Policy -Force
-  Write-Host "Please Re-Run this script in a new powershell enviroment"
-  Exit
+    Set-ExecutionPolicy $Policy -Force
+    Exit
 }
 
 # --------------------------------------------------------------------
